@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="393dp"
+        android:layout_height="250dp"
+        ></ImageView>
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+
+        style="@style/MyTextViewStyle"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+
+        android:layout_above="@+id/linear1">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/image"
+        android:layout_height="350dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            style="@style/MyTextViewStyle"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:hint="Name"
+            android:padding="8dp"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            style="@style/MyTextViewStyle"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:hint="Email"></EditText>
+        <EditText
+            style="@style/MyTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_action_pass"
+            android:hint="Password"></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            style="@style/MyTextViewStyle"
+            android:drawableLeft="@drawable/ic_action_birthday"
+            android:hint="Birthday"></EditText>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MyTextViewStyle"
+                android:text="GENDER"></TextView>
+            <RadioButton
+                android:layout_width="wrap_content"
+                style="@style/MyTextViewStyle"
+                android:layout_height="wrap_content"
+                android:text="MALE"></RadioButton>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MyTextViewStyle"
+                android:text="FEMALE"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_join"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Join"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/linear1">
+    </Button>
+    <TextView
+        android:id="@+id/tViewlogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/MyTextViewStyle"
+        android:gravity="center"
+        android:layout_below="@id/button_join"
+        android:text="Already have an account? Sign In">
+
+
+    </TextView>
+
+</RelativeLayout>
