@@ -4,36 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/mainbg"
     tools:context=".Register">
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="393dp"
-        android:layout_height="250dp"
-        ></ImageView>
+        android:layout_width="196dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        app:srcCompat="@drawable/mainlogo"></ImageView>
     <TextView
-        android:id="@+id/header"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/textViewSignUp"
+        android:layout_width="220dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="241dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
         android:text="Sign Up"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="@color/color_white"
 
-        style="@style/MyTextViewStyle"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center_horizontal"
-
-        android:layout_above="@+id/linear1">
-
-    </TextView>
+        ></TextView>
 
 
     <LinearLayout
         android:id="@+id/linear1"
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_below="@+id/image"
-        android:layout_height="350dp">
+        android:layout_below="@+id/textViewSignUp"
+        android:layout_height="300dp">
 
         <EditText
             android:layout_width="match_parent"
@@ -97,8 +99,9 @@
         android:id="@+id/tViewlogin"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        style="@style/MyTextViewStyle"
+        android:textColor="@color/color_white"
         android:gravity="center"
+        android:textColorHighlight="#C8C8C8"
         android:layout_below="@id/button_join"
         android:text="Already have an account? Sign In">
 
